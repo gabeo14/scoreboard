@@ -10,14 +10,26 @@ const addOneTeamOne = event => {
 
 const addOneTeamTwo = event => {
   console.log("THAS FUGGIN SIGG");
+  score += 1;
+  let message = `${score}`;
+  const teamTwoScore = document.querySelector(".team-2 .score");
+  teamTwoScore.textContent = message;
 };
 
 const subtractOneTeamOne = event => {
   console.log("FUGG MAN");
+  score -= 1;
+  let message = `${score}`;
+  const teamOneScore = document.querySelector(".team-1 .score");
+  teamOneScore.textContent = message;
 };
 
 const subtractOneTeamTwo = event => {
   console.log("FUGG");
+  score -= 1;
+  let message = `${score}`;
+  const teamTwoScore = document.querySelector(".team-2 .score");
+  teamTwoScore.textContent = message;
 };
 
 const main = () => {
