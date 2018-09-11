@@ -1,13 +1,21 @@
+let score = 0;
+
 const addOneTeamOne = event => {
   console.log("FUGG YEAH DUGG");
+  score += 1;
+  let message = `${score}`;
+  const teamOneScore = document.querySelector(".team-1 .score");
+  teamOneScore.textContent = message;
 };
 
 const addOneTeamTwo = event => {
   console.log("THAS FUGGIN SIGG");
 };
+
 const subtractOneTeamOne = event => {
   console.log("FUGG MAN");
 };
+
 const subtractOneTeamTwo = event => {
   console.log("FUGG");
 };
