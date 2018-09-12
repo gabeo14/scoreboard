@@ -32,6 +32,22 @@ const subtractOneTeamTwo = event => {
   teamTwoScore.textContent = message;
 };
 
+const updateTeamOne = event => {
+  console.log("FUGG");
+  let inputTeamOneName = document.querySelector(".team-1 .input");
+  let message = `${inputTeamOneName.value}`;
+  const teamOneName = document.querySelector(".team-1 .name");
+  teamOneName.textContent = message;
+};
+
+const updateTeamTwo = event => {
+  console.log("FUGG");
+  let inputTeamTwoName = document.querySelector(".team-2 .input");
+  let message = `${inputTeamTwoName.value}`;
+  const teamTwoName = document.querySelector(".team-2 .name");
+  teamTwoName.textContent = message;
+};
+
 const main = () => {
   const addButtonTeamOne = document.querySelector(".team-1 .add");
   addButtonTeamOne.addEventListener("click", addOneTeamOne);
@@ -44,6 +60,12 @@ const main = () => {
 
   const subtractButtonTeamTwo = document.querySelector(".team-2 .subtract");
   subtractButtonTeamTwo.addEventListener("click", subtractOneTeamTwo);
+
+  const updateButtonTeamOne = document.querySelector(".team-1 .update");
+  updateButtonTeamOne.addEventListener("click", updateTeamOne);
+
+  const updateButtonTeamTwo = document.querySelector(".team-2 .update");
+  updateButtonTeamTwo.addEventListener("click", updateTeamTwo);
 };
 
 document.addEventListener("DOMContentLoaded", main);
